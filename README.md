@@ -22,10 +22,6 @@ cp -R Video-Editing/davinci-resolve ~/.claude/skills/
 Skill włącza się sam, gdy rozmowa dotyczy Resolve / FCP (albo wpisz `/davinci-resolve`).
 Do sterowania Resolve potrzebny jest otwarty Resolve Studio z Preferences → General → External scripting using = **Local**.
 
-**Claude.ai / aplikacja Claude**: spakuj folder `davinci-resolve` do ZIP (folder w środku archiwum, z `SKILL.md`)
-→ Settings → Capabilities → Skills → Upload skill. W czacie Claude nie steruje Resolve bezpośrednio —
-skill działa jako wiedza (przepisy API, pułapki, skrypty do uruchomienia u siebie).
-
 **Grok** (i inne czaty bez systemu skills): załącz `davinci-resolve/SKILL.md` do rozmowy albo wklej go
 jako instrukcje projektu; pliki z `references/` dołączaj, gdy temat ich dotyczy. Skrypty z `scripts/`
 uruchamiasz sam lokalnie (Python 3 + numpy/Pillow; `drt_cuts.py` tylko biblioteka standardowa).
